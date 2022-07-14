@@ -17,5 +17,13 @@
     "mongodb": "^4.6.0"
   },
   "devDependencies": {},
-  "description": ""
+  "description": "��#\u0000 \u0000n\u0000i\u0000c\u0000h\u0000e\u0000-\u0000w\u0000a\u0000t\u0000c\u0000h\u0000-\u0000s\u0000e\u0000r\u0000v\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmasudrana5060/niche-watch-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mdmasudrana5060/niche-watch-server/issues"
+  },
+  "homepage": "https://github.com/mdmasudrana5060/niche-watch-server#readme"
 }
