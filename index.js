@@ -63,7 +63,7 @@ async function run() {
             if (user?.role === 'admin') {
                 isAdmin = true
             };
-            res.json({ admin: isAdmin });
+            res.send({ admin: isAdmin });
         })
 
         // posting user data to server
@@ -97,7 +97,7 @@ async function run() {
         app.post('/orders', async (req, res) => {
             const order = req.body;
             const result = await orderCollection.insertOne(order);
-            res.json(result);
+            res.send(result);
 
 
         })
@@ -107,9 +107,7 @@ async function run() {
 
             const query = { email: email };
             const result = await orderCollection.find(query).toArray();
-
-
-            res.json(result);
+            res.send(result);
 
 
         })
