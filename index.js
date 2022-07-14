@@ -6,7 +6,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId;
 
 
-const port = process.env.post || 5000;
+const port = process.env.PORT || 5000;
 
 
 
