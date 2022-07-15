@@ -63,7 +63,7 @@ async function run() {
             if (user?.role === 'admin') {
                 isAdmin = true
             };
-            res.send({ admin: isAdmin });
+            res.json({ admin: isAdmin });
         })
 
         // posting user data to server
@@ -107,7 +107,7 @@ async function run() {
 
             const query = { email: email };
             const result = await orderCollection.find(query).toArray();
-            res.send(result);
+            res.json(result);
 
 
         })
@@ -129,7 +129,7 @@ async function run() {
         app.get('/reviews', async (req, res) => {
             const cursor = reviewCollection.find({});
             const review = await cursor.toArray();
-            res.send(review);
+            res.json(review);
 
         })
 
